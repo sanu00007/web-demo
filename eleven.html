@@ -1,0 +1,31 @@
+<!DOCTYPE html >
+<html>
+<head>
+    <title>JAVASCRIPT FOURTH</title>
+    <script type="text/javascript">
+       
+        function checkField()
+        {
+           var field=document.getElementById('field1').value;
+           if(field.length<10)
+           document.getElementById('message1').innerHTML="Too short";
+           else
+           document.getElementById('message1').innerHTML="Successfully saved!";
+           var field=document.getElementById('field2').value;
+           if(field.length<10)
+           document.getElementById('message2').innerHTML="Too short";
+           else
+           document.getElementById('message2').innerHTML="Successfully saved!";
+        }
+
+
+
+
+    </script>
+</head>
+<body>
+  <input id="field1" type="text" onblur="checkField();"/><span id="message1"></span>
+  <input id="field2" type="text" onblur="checkField();"/> <span id="message2"></span>
+
+</body>
+</html>

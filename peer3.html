@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>MY ASSIGNMENT 2</title>
+      <script type="text/javascript">
+        function calculator()
+        {
+          var x= parseInt(document.getElementById("var1").value);
+          var y= parseInt(document.getElementById("var2").value);
+          var z=x+y;
+          document.getElementById("result").innerHTML='The result is '+z;
+          alert("IS it "+ z + "?" );
+        }     
+
+      </script>
+</head>
+<body onload="alert('Nice to Meet You!')">
+    <h2 style="text-align: center;">ADDITION CALCULATOR</h2>
+    <h3>First number</h3><input id="var1" type="number"/>
+    <br>
+    
+    <h3>Second number</h3><input id="var2" type="number"/>
+    <br>
+    <br>
+    <button  onclick="calculator();">sum</button>
+    <br>
+    <h3 id="result">RESULT WILL DISPLAY HERE!!!</h3>
+</body>
+</html>

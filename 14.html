@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+    
+<head>
+    <title>my html</title>
+    <script>
+        function hello()
+        {
+          var x=parseInt(document.getElementById("x").value);
+          var y=parseInt(document.getElementById("y").value);
+          var z=x*y;
+          document.getElementById("z").innerHTML="Result is:"+z;
+        }
+        
+
+    </script>
+    <link rel="stylesheet" type="text/css" href="basic2.css"/> 
+</head>
+
+<body class="testClass">
+    <h1 class="sanin">HEADING 1</h1>
+    <h2 class="sanin">heading 2</h2>
+    <h6 class="sanin">heading 6</h6>
+
+    
+    <input class="sanin" id="x" type="number"/>
+    <input style="clear: left;" id="y" type="number"/>
+    <button style="float: initial;" onclick="hello();">okay</button>
+    <p id="z">This is paragraph and iresult is printed here where resukt js the muktipliction od both input</p>
+</body>  
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>html form with javascript validation</title>
+    <script>
+          function checkFirld()
+    {
+       var firld=document.getElementById('field1').value;
+       var checker= /AAA-BBBB-CCC/;
+       if(checker.test(firld))
+       document.getElementById("messenger1").innerHTML="Input Accepted"
+       else  
+       document.getElementById("messenger1").innerHTML="Input Not Accepted" 
+    }
+
+    </script>
+
+
+</head>
+
+
+<body>
+    <h2>STUDENT'S TECHNICAL INFORMATION</h2>
+    <form>
+         First Name:
+         <input type="text" name="firstname" required><br><br>
+         Last Name:
+         <input type="text" name="lastname" value="" required><br><br>
+        
+         Email ID:
+         <input type="email" name="email" required><br><br>
+        BATCH:
+         <input type="radio" name="classroom" value="R4A" checked>R4A
+         <input type="radio" name="classroom" value="R4B">R4B<br><br>
+        
+         PROGRAMS AND LIBRARIES KNOWN:<br>
+         <input type="checkbox" name="skills" value="flutter" >Flutter
+         <input type="checkbox" name="skills" value="html">Html
+         <input type="checkbox" name="skills" value="react">React<br>
+         <input type="checkbox" name="skills" value="c" >C
+         <input type="checkbox" name="skills" value="java">java
+         <input type="checkbox" name="skills" value="javascript" >javascript<br>
+         <input type="checkbox" name="skills" value="python" >python
+         <input type="checkbox" name="skills" value="firebase">Firebase
+         <input type="checkbox" name="skills" value="django">DjangoM<br><br>
+        Birthday: <br><br>
+        <input type="date" name="birthday"><br><br>
+        SSN code:
+        (JS)<input onblur="checkFirld();" id="field1" type="text" required/><br> <span id="messenger1"></span>
+        (html5)"AAA-BBBB-CCC"<input type="text" pattern="AAA-BBBB-CCC" title="SSN CODE" required><br><br>
+         <input type="submit" value="submit">
+    
+
+
+    </form>
+     
+     
+
+
+</body>
+
+
+
+
+
+</html>
